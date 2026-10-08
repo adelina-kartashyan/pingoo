@@ -1,0 +1,26 @@
+{
+  "name": "pingoo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pingoo — an AI marketing app that tells you what to post every week.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.5.27",
+    "react": "19.1",
+    "react-dom": "19.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}

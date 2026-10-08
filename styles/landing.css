@@ -1,0 +1,10 @@
+/* Placeholder landing page — replace when the landing design is ready */
+.landing { min-height: 100vh; display: grid; place-items: center; padding: 32px 16px; background: #F7F7F5; color: #0D0A26; font-family: Satoshi, Outfit, system-ui, sans-serif; }
+.landing-card { width: min(560px, 100%); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.landing-logo { height: 40px; width: auto; }
+.landing h1 { margin: 8px 0 0; font-size: clamp(36px, 6vw, 56px); line-height: 1.02; letter-spacing: -0.04em; font-weight: 700; }
+.landing p { margin: 0; font-size: 18px; line-height: 1.5; color: #45535F; max-width: 440px; }
+.landing-cta { display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 26px; border-radius: 999px; background: #CCFF4D; color: #0D0A26; border: 1.5px solid #0D0A26; font-weight: 700; font-size: 16px; text-decoration: none; transition: transform .3s cubic-bezier(.34,1.56,.64,1), box-shadow .3s; }
+.landing-cta:hover { transform: translateY(-2px); box-shadow: 0 3px 0 #0D0A26; }
+.landing-cta:focus-visible { outline: 2px solid #0D0A26; outline-offset: 3px; }
+.landing-note { font-size: 13px !important; color: #706E7C !important; }

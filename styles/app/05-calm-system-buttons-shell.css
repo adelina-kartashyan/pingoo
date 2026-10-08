@@ -1,0 +1,264 @@
+/* ════════ Calm system: light surfaces, one primary button style ════════
+   Primary = solid ink pill · Secondary = white pill + border · Text link
+   Purple = links, selected nav, focus, featured chart · Lime = Coach insight only
+   Colour = status only (green worked, amber partly, red didn't / error)        */
+
+/* Buttons */
+.app .btn{border-radius:999px}
+.btn-primary,.btn-acid{background:var(--ink) !important;color:#fff !important;border:1px solid var(--ink);box-shadow:none !important}
+.btn-primary:hover,.btn-acid:hover{background:#2A2640 !important;box-shadow:none !important}
+.btn-line,.btn-ghost,.btn-out{background:var(--paper) !important;color:var(--ink) !important;border:1px solid var(--line-2) !important}
+.btn-line:hover,.btn-ghost:hover,.btn-out:hover{border-color:#B9B6AD !important;background:var(--paper) !important}
+.btn-text{color:#45535F !important}
+.btn-text:hover{color:var(--ink) !important}
+.btn-danger{border:1px solid var(--coral)}
+.send{background:var(--ink)}
+.send:hover{background:#2A2640}
+.msg-me .bub{background:var(--ink)}
+
+/* Former dark cards → white cards */
+.bet,.res-hero,.next,.aud-hero,.camp-hero,.wrapup,.live-banner,.past-card{background:var(--paper) !important;color:var(--ink) !important;border:1px solid var(--line)}
+.bet::before{display:none}
+.bet{border-color:var(--line-2)}
+.bet-hyp,.res-metric,.aud-hero p,.camp-hero p,.live-banner p,.next p,.past-lesson,.wrap-list{color:#45535F !important}
+.bet-stats,.past-stats,.wrap-stats{border-color:var(--line) !important}
+.bet-stats dt,.bet-stats small,.bet-stats dd .from,.past-stats dt,.wrap-stats dt,.wrap-k,.res-sub,.res-scope,.aud-hero-n span,.bet-actions .meta,.ring .ctr span{color:var(--muted) !important}
+.bet-stats dd .to,.past-stats .acid,.wrap-stats .acid{color:var(--ink) !important}
+.past-lesson b{color:var(--ink)}
+.skip-note{color:#45535F}
+.next .eyebrow{color:#45535F}
+.next .ghost-num{-webkit-text-stroke-color:var(--line-2)}
+.wrap-list li::before{background:var(--ink)}
+.life li{color:var(--muted)}
+.life .ld{border-color:var(--line-2)}
+.life li.is-done{color:#45535F}
+.life li.is-done .ld{background:#45535F;border-color:#45535F}
+.life li.is-on{color:var(--ink)}
+.life li.is-on .ld{background:var(--acid);border-color:var(--ink);box-shadow:none}
+.ring .bg{stroke:var(--line)}
+.ring .fg{stroke:var(--ink)}
+
+/* Chips on those cards */
+.chip-dark{background:var(--ground);border:1px solid var(--line);color:var(--ink)}
+.chip-dark .pip{background:var(--acid);box-shadow:0 0 0 1px var(--ink)}
+.bet .chip-dark{background:var(--acid);border-color:var(--acid)}
+.bet .chip-dark .pip{background:var(--ink);box-shadow:none}
+.aud-hero .used-tag{background:var(--acid);color:var(--ink)}
+.aud-hero .used-tag i{background:var(--ink)}
+
+/* The one lime splash: Coach's key number */
+.res-num,.aud-hero-n b{color:var(--ink) !important;background:var(--acid);display:inline-block;padding:0 .12em;border-radius:12px}
+.aud-hero-n b{font-size:clamp(56px,7vw,96px)}
+.stamp{color:var(--ink);background:var(--acid);border-color:var(--ink)}
+
+/* Progress track on Results: data = ink */
+.track{background:#ECEBE6}
+.track .fill{background:var(--ink)}
+.mark{background:var(--muted)}
+.mark i{color:var(--muted)}
+.mark-t{background:var(--brand)}
+.mark-t i{color:var(--brand)}
+
+/* Small Coach dots */
+.ev-dots i{background:var(--ink)}
+
+/* Week chip when viewing another week */
+.wk-chip.is-other{background:var(--brand-50);border-color:var(--brand);color:var(--ink)}
+.wk-chip.is-other .wk-d{color:#45535F}
+.wk-chip.is-other .i{color:var(--brand)}
+
+/* Mobile tab bar: light */
+@media (max-width:720px){
+  .tabbar{background:rgba(255,255,255,.96);border:1px solid var(--line);box-shadow:0 12px 30px -18px rgba(13,10,38,.35)}
+  .tab{color:#45535F}
+  .tab.is-active{background:var(--ink);color:#fff}
+}
+
+/* ════════ Home + shell from Figma 237:1115 ════════ */
+
+.main{background:rgba(230,230,242,.16)}
+/* Sidebar */
+.side{border-right-color:#E3E3E6}
+.side .side-head{border-bottom-color:#EBEBF2}
+.side .side-sec{font-size:14px;font-weight:500;color:rgba(13,10,38,.6);letter-spacing:1.5px}
+.side .nav-item.is-active{background:rgba(13,10,38,.06);color:var(--ink);font-weight:700}
+.nav-item.is-active::before{background:var(--ink)}
+.nav-item .badge-n,.side .nav-item.is-active .badge-n{background:var(--coral)}
+.pro{border:0;border-top:1px solid #E7E6E1;border-radius:0;padding:18px 0 0;gap:10px}
+.pro-title{font-weight:700}
+.pro p{font-size:13px}
+.pro-btn{border:1px solid var(--ink);border-radius:12px;height:40px;font-weight:700;font-size:15px;width:100%}
+/* Top bar */
+.top{background:#fff;border-bottom:1px solid #E3E3E6;min-height:100px;padding:0 32px;-webkit-backdrop-filter:none;backdrop-filter:none}
+.week .k{font-size:12px;color:rgba(13,10,38,.6)}
+.week .week-dates{font-size:16px;font-weight:700}
+.ask-wrap{max-width:800px}
+.ask{background:#F4F4F5;border:1px solid #E7E6E1;border-radius:16px;height:48px;color:var(--ink);font-size:15px}
+.ask .i{color:var(--ink)}
+.pill-btn{border-color:#E7E6E1}
+.av-me{width:44px;height:44px;background:var(--ink);font-size:12px;font-weight:700}
+.me-name{font-weight:500;font-size:15px}
+/* Coach tip */
+.coachbar{border-color:#E3E3E6;border-radius:20px;padding:10px 10px 10px 12px;gap:14px;font-size:15px}
+.btn-coach{height:52px;padding:0 22px;border-radius:999px;background:var(--acid);color:var(--ink) !important;border:1px solid var(--ink);font-weight:700;font-size:15px}
+.btn-coach:hover{transform:translateY(-1px)}
+/* Page header */
+.page-head{gap:12px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:1.44px;color:#45535F}
+.h1{letter-spacing:-1px;font-weight:700}
+.lede{font-size:18px;color:rgba(13,10,38,.6)}
+.wk-chip{border-color:#E3E3E6;font-size:15px}
+.wk-chip .i:first-child{width:22px;height:22px;color:var(--ink)}
+.wk-l{font-weight:700}
+.wk-d{color:rgba(13,10,38,.6)}
+/* Home layout */
+.home .bet-grid{margin-top:16px}
+.home .card{border-color:#E3E3E6;border-radius:22px;padding:22px;box-shadow:var(--card-shadow)}
+.home .card-h h3{font-size:18px;font-weight:700;letter-spacing:-.18px}
+/* Plan card */
+.bet{--p:44px;padding:44px;border-radius:32px;border:1px solid #E3E3E6 !important;box-shadow:0 4px 10.6px rgba(225,225,228,.52)}
+.bet-mark{position:absolute;top:35px;right:30px;width:44px;height:40px;object-fit:contain}
+.bet-top{margin:0;padding:0 24px}
+.bet .chip-dark{height:30px;gap:8px;padding:0 12px;font-size:12px;font-weight:600;letter-spacing:.48px}
+.bet .chip-dark .pip{width:7px;height:7px}
+.bet-body{padding:32px 150px 0 24px}
+.bet-title{font-size:clamp(34px,3.6vw,48px);font-weight:500;letter-spacing:-1px;line-height:1.5;max-width:none}
+.bet-hyp{margin-top:0;font-size:19px;line-height:1.45;max-width:560px}
+.bet-stats{margin:26px 0 0;padding:24px;background:#FAFAFA;border-top:1.333px dashed #EBEBF2 !important;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 0}
+.bet-stats > div{padding:10px 32px 0 22px;border-left:1px solid #E3E3E6;min-height:82px}
+.bet-stats > div:first-child{border-left:0;padding-left:0}
+.bet-stats dt{font-size:12px;color:#464359 !important;margin-bottom:6px}
+.bet-stats dd{font-size:18px;font-weight:500}
+.bet-stats dd .from{color:var(--ink) !important;font-weight:400}
+.bet-stats dd .to{color:#3F7A00 !important;font-weight:600}
+.bet-stats small{font-size:13px;color:rgba(13,10,38,.6) !important;margin-top:2px}
+.bet-stats::before,.bet-stats::after,.bet .bet-actions::before,.bet .bet-actions::after,.bet .skip-note::before,.bet .skip-note::after{content:"";position:absolute;top:-14px;width:28px;height:28px;border-radius:50%;background:#F4F4F5;border:1px solid #EBEBF2;box-sizing:border-box}
+.bet-stats::before,.bet .bet-actions::before,.bet .skip-note::before{left:calc(var(--p) * -1 - 14px)}
+.bet-stats::after,.bet .bet-actions::after,.bet .skip-note::after{right:calc(var(--p) * -1 - 14px)}
+.bet .bet-actions,.bet .skip-note{position:relative;margin:0;padding:24px;gap:12px;background:rgba(244,244,245,.43);border-top:1px dashed #EBEBF2}
+.bet .btn{height:52px;font-size:15px;font-weight:600;padding:0 22px}
+.bet .btn-line{border:1px solid var(--ink) !important;font-weight:500}
+.bet .btn-text{color:var(--ink) !important;font-weight:400;padding:0 8px}
+.bet .bet-actions .meta{font-size:13px;color:rgba(13,10,38,.6) !important}
+.stamp{right:90px}
+/* Why this plan */
+.home .evidence{border-color:#E3E3E6;border-radius:26px;box-shadow:var(--card-shadow)}
+.home .ev-toggle{padding:20px 24px}
+.home .ev-toggle b{font-weight:600;font-size:17px}
+.home .ev-toggle .sub{font-size:15px;color:rgba(13,10,38,.6)}
+.home .ev-toggle .chev{width:16px;height:16px}
+/* Your week */
+.home .meter{background:#EDEDFF;margin:14px 0 10px}
+.home .chk{gap:14px;padding:10px 6px}
+.home .chk-box{border:1.333px solid #E3E3E6}
+.home .chk-t{font-size:15px;font-weight:500}
+.home .chk-s{font-size:13px;color:rgba(13,10,38,.6)}
+/* Last week's plan */
+.lastwk{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.lastwk .label{font-weight:700;letter-spacing:1.2px;color:rgba(13,10,38,.6)}
+.lastwk-t{font-size:17px;font-weight:700}
+.lastwk .last-v{font-size:34px;font-weight:700;letter-spacing:-1.36px}
+.link-ink{color:var(--ink) !important;font-weight:400 !important;font-size:15px !important;padding:6px 8px 6px 0 !important;align-self:flex-start}
+.link-ink:hover{background:transparent !important;text-decoration:underline}
+/* Bottom row */
+.home .home-row{gap:16px;margin-top:24px}
+.home .home-row .card{padding:30px}
+.home .home-row .card-h{margin-bottom:14px}
+.home .stat-row,.home .stat-row:first-of-type{border-top:1px solid #E7E6E1;padding:12px 0;font-size:15px}
+.home .stat-row b{font-size:20px;font-weight:500;letter-spacing:-.72px}
+.home .up{font-weight:700}
+.home .up-row,.home .up-row:first-of-type{border-top:1px solid #E7E6E1;padding:10px 0}
+.home .up-row .t{font-size:15px;font-weight:500}
+.home .up-row .s{font-size:13px;color:rgba(13,10,38,.6)}
+.camp-card{display:flex;flex-direction:column;gap:10px}
+.camp-name{font-size:16px;letter-spacing:-.4px}
+.camp-card .bar{background:#EFEFF2;height:8px}
+.camp-card .bar span{background:var(--ink)}
+@media (max-width:900px){.bet{--p:32px;padding:32px}.bet-body{padding-right:90px}.bet-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.bet-stats > div:nth-child(3){border-left:0;padding-left:0}}
+@media (max-width:720px){
+  .top{min-height:72px;padding:10px 16px}
+  .bet{--p:22px;padding:22px}
+  .bet-mark{top:20px;right:18px;width:36px;height:32px}
+  .bet-top,.bet-body{padding-left:0;padding-right:0}
+  .bet-body{padding-top:24px}
+  .bet-stats{margin-top:20px;padding:18px}
+  .bet .bet-actions,.bet .skip-note{padding:18px}
+  .btn-coach{height:44px}
+}
+
+/* Typeface: Satoshi everywhere, Outfit kept where the Figma frame uses it */
+.app,.app button,.app input,.app select,.app textarea{font-family:Satoshi,Outfit,system-ui,sans-serif}
+.app .bet-stats,.app .bet .btn,.app .chip,.app .verdict,.app .status,.app .ev-toggle,.app .tag{font-family:Outfit,Satoshi,system-ui,sans-serif}
+
+/* Plan card grows so "Why this plan?" lines up with the bottom of Last week's plan */
+.home .bet-grid{align-items:stretch}
+.home .bet-grid > .col{min-height:100%}
+.home .bet{flex:1 1 auto;display:flex;flex-direction:column}
+.home .bet-body{flex:1 1 auto}
+.home .bet-grid > .side-col{align-self:start}
+@media (max-width:1024px){.home .bet{flex:none}}
+
+/* Stats band 12px top/bottom; more room above the buttons */
+.bet-stats{padding-top:12px;padding-bottom:12px}
+.bet .bet-actions,.bet .skip-note{padding-top:32px}
+
+/* Divider: dotted line above the buttons row, no stroke on the stats row */
+.bet-stats{border-top:0 !important;border-bottom:0 !important}
+.bet .bet-actions,.bet .skip-note{border-top:2px dotted #CFCDD8}
+
+/* Stats items: 12px left, right and bottom padding */
+.bet-stats > div,.bet-stats > div:first-child,.bet-stats > div:nth-child(3){padding:10px 12px 12px 12px}
+
+/* Stats dividers: short and vertically centred */
+.bet-stats > div{border-left:0 !important;position:relative}
+.bet-stats > div + div::before{content:"";position:absolute;left:0;top:50%;width:1px;height:40px;transform:translateY(-50%);background:#E3E3E6}
+@media (max-width:900px){.bet-stats > div:nth-child(3)::before{display:none}}
+.bet-stats > div + div::before{width:0;background:none;border-left:2px dotted #CFCDD8}
+.bet-stats{border-top:2px dotted #CFCDD8 !important}
+
+/* More room under the plan's title and description */
+.bet-body{padding-bottom:40px}
+@media (max-width:720px){.bet-body{padding-bottom:24px}}
+
+/* Stats band: content sits exactly 24px from both sides */
+.bet-stats{padding-left:24px !important;padding-right:24px !important}
+.bet-stats > div:first-child{padding-left:0 !important}
+.bet-stats > div:last-child{padding-right:0 !important}
+@media (max-width:900px){.bet-stats > div:nth-child(3){padding-left:0 !important}.bet-stats > div:nth-child(2){padding-right:0 !important}}
+
+/* Button text: medium weight everywhere */
+.app .btn,.app .bet .btn,.app .btn-coach,.app .pro-btn,.app .bet .btn-line,.app .bet .btn-text{font-weight:500 !important}
+.side .side-sec{font-weight:700}
+.head-row{margin-bottom:40px}
+.home .bet-grid{margin-top:0}
+
+.side .toggle .i{width:24px;height:24px;color:#5D6974}
+.side .toggle:hover .i{color:var(--ink,#0D0A26)}
+
+/* Brand logos for channels and integrations */
+.mt.ch-IG,.mt.ch-in,.mt.ch-YT,.mt.ch-X,.mt.ch-HS,.mt.ch-Za,.mt.ch-MA,.mt.ch-LA{background-color:#fff !important;background-repeat:no-repeat !important;background-position:center !important;background-size:66% !important;box-shadow:inset 0 0 0 1px #E7E6E1;font-size:0 !important;color:transparent !important}
+.mt.ch-IG{background-image:url('/channels/instagram-v1.png') !important}
+.mt.ch-in,.mt.ch-LA{background-image:url('/channels/linkedin-v1.svg') !important;background-size:78% !important}
+.mt.ch-YT{background-image:url('/channels/youtube-v1.svg') !important;background-size:70% !important}
+.mt.ch-X{background-image:url('/channels/x-v1.svg') !important;background-size:58% !important}
+.mt.ch-HS{background-image:url('/channels/hubspot-v1.svg') !important}
+.mt.ch-Za{background-image:url('/channels/zapier-v1.svg') !important;background-size:78% !important}
+.mt.ch-MA{background-image:url('/channels/meta-ads-v1.svg') !important}
+
+/* Button system: 3 styles
+   1 Accent  (.btn-acid)   lime  — the one next step on a screen
+   2 Primary (.btn-primary, .pro-btn) ink — confirm / commit
+   3 Neutral (.btn-line/.btn-ghost/.btn-out/.btn-coach) white + grey border — everything else */
+.app .btn-acid,.app .bet .btn-acid{background:var(--acid) !important;color:var(--ink) !important;border:1px solid #B5E83A !important;box-shadow:none !important}
+.app .btn-acid:hover,.app .bet .btn-acid:hover{background:#BFF53A !important;border-color:#A6D92C !important}
+.app .btn-acid .i{color:var(--ink)}
+.app .pro-btn{background:var(--ink) !important;color:#fff !important;border:1px solid var(--ink) !important}
+.app .pro-btn:hover{background:#2A2640 !important}
+.app .btn-coach{background:var(--paper,#fff) !important;color:var(--ink) !important;border:1px solid var(--line-2) !important}
+.app .btn-coach:hover{border-color:#B9B6AD !important}
+
+/* Focus chip black, Use this plan with ink stroke */
+.app .bet-top .chip-dark{background:var(--ink) !important;color:#fff !important;border-color:var(--ink) !important}
+.app .bet-top .chip-dark .pip{background:var(--acid) !important}
+.app .btn-acid,.app .bet .btn-acid{border:1px solid var(--ink) !important;font-weight:700 !important}
+.app .btn-acid:hover,.app .bet .btn-acid:hover{border-color:var(--ink) !important}

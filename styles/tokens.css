@@ -1,0 +1,27 @@
+/* ─────────────────────────────────────────────────────────────
+   Pingoo design tokens — the single source of truth for colour,
+   radius, shadow and motion. The same names become Figma variables.
+   ───────────────────────────────────────────────────────────── */
+.app{
+  --ink: #0D0A26;  /* text and primary surfaces */
+  --ink-2: #1A1543;  /* secondary ink */
+  --ground: #F7F7F5;  /* page background */
+  --paper: #FFFFFF;  /* cards and panels */
+  --line: #E7E6E1;  /* hairlines and borders */
+  --line-2: #D8D6CF;  /* stronger borders */
+  --muted: #6E6C7D;  /* secondary text */
+  --brand: #0D0A26;  /* primary brand colour (= ink) */
+  --brand-ink: #2A2640;  /* brand text on light */
+  --brand-50: #EFEFF2;  /* subtle brand tint */
+  --acid: #CCFF4D;  /* lime — fills under ink text only */
+  --coral: #CF3216;  /* errors and "didn’t work" */
+  --amber: #FFC94D;  /* warnings */
+  --ease: cubic-bezier(.22,1,.36,1);  /* default easing */
+  --spring: cubic-bezier(.22,1,.36,1);  /* springy easing for small UI */
+  --r: 22px;  /* default card radius */
+  --card-shadow: 0 4px 5.3px rgba(225,225,228,.52);  /* card shadow */
+  --sel-bg: rgba(13,10,38,.06);  /* selected item background */
+  --hover-bg: rgba(13,10,38,.035);  /* hover background */
+  --ph-fill: #F7F7F9;  /* media placeholder fill */
+  --ph-line: #D9D7E0;  /* media placeholder outline */
+}
