@@ -70,7 +70,7 @@
 .lib-shape.s-11{width:62%;aspect-ratio:1}
 .lib-shape.s-169{width:78%;aspect-ratio:16/9}
 .lib-ic{width:16px;height:16px;fill:#514F5F}
-.lib-ic.img{fill:none;stroke:#514F5F;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.lib-ic.img{fill:none;stroke:#514F5F;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .lib-len{position:absolute;right:6px;bottom:6px;font-size:10px;font-weight:600;color:#fff;background:rgba(13,10,38,.78);border-radius:5px;padding:1px 5px}
 .lib-check{position:absolute;top:6px;right:6px;width:18px;height:18px;border-radius:50%;background:var(--brand);display:grid;place-items:center;opacity:0;transform:scale(.6);transition:opacity .2s var(--ease),transform .25s var(--ease)}
 .lib-check svg{width:12px;height:12px;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
